@@ -15,7 +15,7 @@ function App() {
             <p className='text-9xl'>Majed.</p>
           </div>
           <div className=''>
-            <p className='text-4xl'>I'm a front-end developerrrrrrrrrrrr.</p>
+            <p className='text-4xl'>I'm a front-end developer.</p>
           </div>
           <div className=''>
             <span className='text-2xl italic'>I also minor in user experience </span><span>😁</span>
