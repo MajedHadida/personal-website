@@ -2,6 +2,8 @@ import './App.css';
 import Navigationbar from './Navigationbar';
 import plant from './assets/plant.png';
 //Illustration by <a href="https://icons8.com/illustrations/author/ZzX8QJV19tuE">Maria Letta</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+//Make sure after pushing, npm run build then npm run deploy
+
 function App() {
   return (
     <div className='bg-primary'>
