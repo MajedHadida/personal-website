@@ -12,7 +12,7 @@ function App() {
             <p>Hello, I'm</p>
           </div>
           <div className='font-bold font-serif'>
-            <p className='text-9xl'>Majed.</p>
+            <p className='text-9xl'>Majed. :O</p>
           </div>
           <div className=''>
             <p className='text-4xl'>I'm a front-end developer.</p>
