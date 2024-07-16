@@ -1,9 +1,13 @@
 import React from 'react';
+import Navigationbar from '../components/Navigationbar/Navigationbar';
 
 export default function Contact(){
     return(
-        <>
-            <h1>Contact Page</h1>
-        </>
+        <div className='bg-primary'>
+            <Navigationbar/>
+            <div className='flex flex-col min-h-screen justify-center' id='body'>
+            </div>
+
+        </div>
     );
 }
