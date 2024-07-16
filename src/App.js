@@ -1,34 +1,26 @@
 import './App.css';
-import Navigationbar from './Navigationbar';
-import plant from './assets/plant.png';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import NoPage from './pages/NoPage';
 //Illustration by <a href="https://icons8.com/illustrations/author/ZzX8QJV19tuE">Maria Letta</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+//<a href="https://www.flaticon.com/free-icons/leaf" title="leaf icons">Leaf icons created by Freepik - Flaticon</a>
 //Make sure after pushing, npm run build then npm run deploy
 
 function App() {
   return (
-    <div className='bg-primary'>
-      <Navigationbar/>
-      <div className='flex justify-center align-middle'>
-        <div className='flex flex-col min-h-screen justify-center' id='body'>
-          <div className='text-3xl'>
-            <p>Hello, I'm</p>
-          </div>
-          <div className='font-bold font-serif'>
-            <p className='text-9xl'>Majed.</p>
-          </div>
-          <div className=''>
-            <p className='text-4xl'>I'm a front-end developer.</p>
-          </div>
-          <div className=''>
-            <span className='text-2xl italic'>I also minor in user experience </span><span>😁</span>
-          </div>
-        </div>
-        <img src={plant} alt='plant icon' className='h-48 self-center'/>
-      </div>
-      
-      
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='*' element={<NoPage/>}/>
+        </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
