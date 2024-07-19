@@ -1,8 +1,9 @@
 import React from "react";
 import plant from '../assets/plant.png'
 import Navigationbar from '../components/Navigationbar/Navigationbar'
+import Footer from '../components/Footer'
  
-export default function Home(){
+const Home = () =>{
     return (
         <div className='bg-primary'>
             <Navigationbar/>
@@ -11,8 +12,8 @@ export default function Home(){
                     <div className='text-3xl'>
                     <p>Hello, I'm</p>
                     </div>
-                    <div className='font-bold font-serif'>
-                    <p className='text-9xl'>Majed.</p>
+                    <div className=''>
+                    <h1 className='text-9xl font-bold'>Majed</h1>
                     </div>
                     <div className=''>
                     <p className='text-4xl'>I'm a front-end developer.</p>
@@ -23,8 +24,10 @@ export default function Home(){
                 </div>
                 <img src={plant} alt='plant icon' className='h-48 self-center'/>
             </div>
-        
+            <Footer/>
         
       </div>
     );
 }
+
+export default Home;

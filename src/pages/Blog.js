@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigationbar from '../components/Navigationbar/Navigationbar';
 
-export default function Blog(){
+const Blog  = () => {
     return(
         <div className='bg-primary'>
             <Navigationbar/>
@@ -11,3 +11,4 @@ export default function Blog(){
         </div>
     );
 }
+export default Blog;

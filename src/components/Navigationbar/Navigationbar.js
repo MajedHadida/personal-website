@@ -3,7 +3,7 @@ import leaf from '../../assets/leaf.png';
 
 //In first div, apply shadow-md only when user scrolls down far enough.
 
-export default function Navigationbar(){
+const Navigationbar = () => {
     return(
       <div className="navbar rounded-box bg-primary rounded-t-none fixed top-0">
       <div className="flex-1">
@@ -19,3 +19,5 @@ export default function Navigationbar(){
     </div>
     );
 }
+
+export default Navigationbar;
