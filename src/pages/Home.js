@@ -2,12 +2,15 @@ import React from "react";
 import plant from '../assets/plant.png'
 import Navigationbar from '../components/Navigationbar/Navigationbar'
 import Footer from '../components/Footer'
+import Projects from './Projects'
+import Blog from './Blog'
+import Contact from './Contact'
  
 const Home = () =>{
     return (
         <div className='bg-primary'>
             <Navigationbar/>
-            <div className='flex justify-center align-middle'>
+            <div id="main" className='flex justify-center align-middle'>
                 <div className='flex flex-col min-h-screen justify-center' id='body'>
                     <div className='text-3xl'>
                     <p>Hello, I'm</p>
@@ -24,6 +27,19 @@ const Home = () =>{
                 </div>
                 <img src={plant} alt='plant icon' className='h-48 self-center'/>
             </div>
+
+            <div id="contact">
+                <Contact/>
+            </div>
+
+            <div id="projects">
+                <Projects/>
+            </div>
+
+            <div id="blog">
+                <Blog/>
+            </div>
+
             <Footer/>
         
       </div>

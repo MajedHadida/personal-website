@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1{
   font-family: 'Halant', serif;
 }
@@ -58,3 +62,6 @@ code {
   font-weight: 700;
   font-style: normal;
 }
+
+
+
