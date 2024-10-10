@@ -28,16 +28,16 @@ const Home = () =>{
                 <img src={plant} alt='plant icon' className='h-48 self-center'/>
             </div>
 
-            <div id="contact">
-                <Contact/>
-            </div>
-
             <div id="projects">
                 <Projects/>
             </div>
 
             <div id="blog">
                 <Blog/>
+            </div>
+
+            <div id="contact">
+                <Contact/>
             </div>
 
             <Footer/>

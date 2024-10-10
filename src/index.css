@@ -63,5 +63,17 @@ code {
   font-style: normal;
 }
 
+.leaf-right{
+  background-color: #80AF81;
+  border-radius: 40px 10px;
+  position: relative;
+}
+
+.leaf-left{
+  background-color: #80AF81;
+  border-radius: 10px 40px;
+  position: relative;
+}
+
 
 
