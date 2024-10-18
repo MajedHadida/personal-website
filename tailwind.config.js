@@ -4,7 +4,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+      'fade-right': {
+        '0%': { opacity: '0', transform: 'translateX(-20px)' },
+        '100%': { opacity: '1', transform: 'translateX(0)' },
+      },
+      },
+      animation: {
+        'fade-right-1s': 'fade-right 1s ease-out',
+        'fade-right-2s': 'fade-right 2s ease-out',
+        'fade-right-3s': 'fade-right 3s ease-out',
+      },},
   },
   plugins: [
     require('daisyui'),

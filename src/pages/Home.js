@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import plant from '../assets/plant.png'
 import Navigationbar from '../components/Navigationbar/Navigationbar'
 import Footer from '../components/Footer'
@@ -7,21 +7,35 @@ import Blog from './Blog'
 import Contact from './Contact'
  
 const Home = () =>{
+    const [scrollYPosition, setScrollYPosition] = React.useState(0);
+
+    const handleScroll = () => {
+        const newScrollYPosition = window.pageYOffset;
+        setScrollYPosition(newScrollYPosition);
+    };
+
+    React.useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className='bg-primary'>
             <Navigationbar/>
             <div id="main" className='flex justify-center align-middle'>
                 <div className='flex flex-col min-h-screen justify-center' id='body'>
                     <div className='text-3xl'>
-                    <p>Hello, I'm</p>
+                    <p className="animate-fade-right-3s animate-duration">Hello, I'm</p>
+                    </div>
+                    <div>
+                    <h1 className='text-9xl font-bold animate-fade-right-1s'>Majed</h1>
                     </div>
                     <div className=''>
-                    <h1 className='text-9xl font-bold'>Majed</h1>
+                    <p className='text-4xl animate-fade-right-3s'>I'm a front-end developer.</p>
                     </div>
-                    <div className=''>
-                    <p className='text-4xl'>I'm a front-end developer.</p>
-                    </div>
-                    <div className=''>
+                    <div className='animate-fade-right-3s'>
                     <span className='text-2xl italic'>I also minor in user experience </span><span>😁</span>
                     </div>
                 </div>

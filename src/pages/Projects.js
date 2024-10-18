@@ -1,26 +1,18 @@
 import React, { useState } from "react";
-import Navigationbar from "../components/Navigationbar/Navigationbar";
+import { FaChevronDown } from "react-icons/fa6";
+import { FaChevronUp } from "react-icons/fa";
+import projects from "./projects.json"
+
+
 
 
 const Projects = () => {
-  //Placeholder images for the projects
-  const projects = [
-    {
-      url: "https://images.unsplash.com/photo-1721013370122-f22f07cf4c4a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Test Title 1",
-      desc: "Test Description 1"
-    },
-    {
-      url: "https://plus.unsplash.com/premium_photo-1682469892508-9b051e15e68b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Test Title 2",
-      desc: "Test Description 2"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1720887236665-43caad593cdf?q=80&w=1836&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Test Title 3",
-      desc: "Test Description 3"
-    },
-  ];
+
+  const [openProjectIndex, setOpenProjectIndex] = useState(null)
+
+  function toggle(index){
+    setOpenProjectIndex(openProjectIndex === index ? null : index)
+  }
 
   //HTML
   return (
@@ -47,8 +39,14 @@ const Projects = () => {
             <div className="border border-2-2 border-base-100 w-[4%] absolute left-1/2 bottom-0 rotate-[345deg]"></div>
             {/* Leaf div */}
             <div className="order-1 leaf-right shadow-xl w-[47%] px-6 py-4">
-              <h3 className="mb-3 font-bold text-gray-800 text-xl">{project.title}</h3>
-              <p className="text-gray-700 leading-tight">{project.desc}</p>
+              <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
+                <h3 className="mb-3 font-bold text-gray-800 text-xl">{project.title}</h3>
+                <FaChevronDown/>
+              </div>
+              {openProjectIndex === index && (
+                <p className="text-gray-700 leading-tight">{project.desc}</p>
+              )}
+              
             </div>
           </>
         )}
@@ -58,8 +56,13 @@ const Projects = () => {
           <>
             {/* Leaf div */}
             <div className="order-1 leaf-left shadow-xl w-[47%] px-6 py-4">
-              <h3 className="mb-3 font-bold text-gray-800 text-xl">{project.title}</h3>
-              <p className="text-gray-700 leading-tight">{project.desc}</p>
+              <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
+                <h3 className="mb-3 font-bold text-gray-800 text-xl">{project.title}</h3>
+                <FaChevronDown />
+              </div>
+              {openProjectIndex === index && (
+                <p className="text-gray-700 leading-tight">{project.desc}</p>
+              )}
             </div>
             {/* left leaf stem */}
             <div className="border border-2-2 border-base-100 w-[4%] absolute right-1/2 bottom-0 rotate-[15deg]"></div>

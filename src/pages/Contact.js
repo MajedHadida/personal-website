@@ -5,7 +5,7 @@ import studying from '../assets/studying.png';
 const Contact = () => {
     return(
         <div className='bg-primary h-full flex flex-col justify-center align-middle'>
-            <div className='grid grid-cols-3 grid-rows-3 px-28 gap-10' id='body'>
+            <div className='grid grid-cols-3 grid-rows-3 px-28 gap-10 my-3' id='body'>
                 <div className='flex items-center container bg-base-100 col-span-2 row-span-3 rounded-lg p-5'>
                     Majed Hadida
                 </div>
