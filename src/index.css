@@ -63,16 +63,88 @@ code {
   font-style: normal;
 }
 
+@keyframes moveClouds {
+  from { transform: translateX(-10%); }
+  to { transform: translateX(110%); }
+}
+.cloud {
+  animation: fade-right 2s ease-out, moveClouds 300s linear infinite;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20%;
+  width: 100px;
+  height: 100px;
+  border-radius: 40px;
+  z-index: 0;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes stem-sway{
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(6deg); }
+}
+
+.stem-left{
+  --tw-border-opacity: 1;
+    border-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-border-opacity)));
+  border-width: 1px;
+  width: 6%;
+  position: absolute;
+  right: 50%;
+  rotate: 15deg;
+  bottom: 0.25rem;
+  animation: stem-sway 4s ease-in-out infinite;
+  transform-origin: top right;
+}
+
+
+.stem-right{
+  --tw-border-opacity: 1;
+    border-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-border-opacity)));
+  border-width: 1px;
+  width: 6%;
+  position: absolute;
+  left: 50%;
+  rotate: 345deg;
+  bottom: 0.25rem;
+  animation: stem-sway 4s ease-in-out infinite;
+  transform-origin: top left;
+}
+
 .leaf-right{
   background-color: #80AF81;
   border-radius: 40px 10px;
   position: relative;
+  animation: sway 4s ease-in-out infinite;
+}
+
+.leaf-right:hover{
+  animation: paused;
 }
 
 .leaf-left{
   background-color: #80AF81;
   border-radius: 10px 40px;
   position: relative;
+  animation: sway 4s ease-in-out infinite;
+}
+
+.leaf-left:hover{
+  animation: paused;
+}
+
+
+
+.branch-stem{
+  width: 0;
+	height: 0;
+  border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 25px solid #555;
 }
 
 

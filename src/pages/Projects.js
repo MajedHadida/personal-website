@@ -19,12 +19,12 @@ const Projects = () => {
     <div class="container mx-auto px-4 py-8">
       <div class="relative wrap overflow-hidden">
       {/* Top leaf title */}
-      <div className="relative">
+      <div className="relative pt-5">
       <div className="bg-base-100 w-1/2 leaf-left flex justify-center">
         <h1 className="text-3xl font-bold my-3">Projects</h1>
       </div>
       {/* left leaf stem */}
-      <div className="border border-2-2 border-base-100 w-[4%] absolute right-1/2 bottom-1 rotate-[15deg]"></div>
+      <div className="stem-left"></div>
       </div>
       
       <div class="absolute border-base-100 h-full border-2 left-1/2"></div>
@@ -36,7 +36,7 @@ const Projects = () => {
             {/* empty div to keep leaf on right side */}
             <div className="order-1 w-5/12"></div>
             {/* Right leaf stem */}
-            <div className="border border-2-2 border-base-100 w-[4%] absolute left-1/2 bottom-0 rotate-[345deg]"></div>
+            <div className="stem-right"></div>
             {/* Leaf div */}
             <div className="order-1 leaf-right shadow-xl w-[47%] px-6 py-4">
               <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
@@ -65,7 +65,7 @@ const Projects = () => {
               )}
             </div>
             {/* left leaf stem */}
-            <div className="border border-2-2 border-base-100 w-[4%] absolute right-1/2 bottom-0 rotate-[15deg]"></div>
+            <div className="stem-left"></div>
             {/* empty div to keep leaf on left side */}
             <div className="order-1 w-5/12"></div>
           </>
@@ -74,9 +74,9 @@ const Projects = () => {
       ))}
       </div>
       {/* pot section */}
-      <div className="flex flex-col justify-center items-center">
-        <div className="w-1/2 h-[5vw] bg-[#B99470] rounded-t-xl border-black"></div>
-        <div className="w-[45%] h-[40vh] bg-[#B99470] border-t-[1px] border-black"></div>
+      <div className="flex flex-col justify-center items-center relative">
+        {/* <div className="absolute top-0 branch-stem"></div> */}
+        <div className="w-screen h-[5vw] bg-[#B99470] border-black rotate-[355deg]"></div>
       </div>
     </div>
   );
