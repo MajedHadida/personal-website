@@ -24,7 +24,7 @@ const Home = () =>{
     return (
         <div className='bg-primary'>
             <Navigationbar/>
-            <div className="cloud">I'm a test cloud :)</div>
+            <div className="cloud flex items-center"><p className="text-center">I'm a test cloud :)</p></div>
             <div id="main" className='flex justify-center align-middle'>
                 <div className='flex flex-col min-h-screen justify-center' id='body'>
                     <div className='text-3xl'>

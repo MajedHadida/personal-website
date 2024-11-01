@@ -64,11 +64,11 @@ code {
 }
 
 @keyframes moveClouds {
-  from { transform: translateX(-10%); }
-  to { transform: translateX(110%); }
+  from { transform: translateX(-10%); } /* Start fully off-screen to the left */
+  to { transform: translateX(100vw); }    /* End fully off-screen to the right */
 }
 .cloud {
-  animation: fade-right 2s ease-out, moveClouds 300s linear infinite;
+  animation: fade-right 2s ease-out, moveClouds 60s linear infinite;
   background-color: #ffffff;
   position: absolute;
   top: 20%;
@@ -80,7 +80,7 @@ code {
 
 @keyframes sway {
   0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(3deg); }
+  50% { transform: rotate(1deg); }
 }
 
 @keyframes stem-sway{
