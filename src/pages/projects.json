@@ -1,22 +1,32 @@
 [
     {
-        "url": "https://images.unsplash.com/photo-1721013370122-f22f07cf4c4a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "Test Title 1",
-        "desc": "Test Description 1"
+        "title": "Personal Website",
+        "date": "November 2024",
+        "languages":["React","DaisyUI","Tailwind","JavaScript"],
+        "desc": "The very site you are on right now! This website will be my hub of where I showcase all my projects, mostly focused on frontend development but I may explore other types of projects.",
+        "view_msg":"Source Code",
+        "view_link": "https://github.com/MajedHadida/personal-website"
       },
       {
-        "url": "https://plus.unsplash.com/premium_photo-1682469892508-9b051e15e68b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "Test Title 2",
-        "desc": "Test Description 2"
+        "title": "Icy Veins Wireframes/Prototype",
+        "date": "October 2024",
+        "languages":["Figma", "Optimal Workshop"],
+        "desc": "Icy Veins is A website that provides guide & news on a variety of games, focusing on MMORPGs. However, I believe Icy Veins' navigation system can be a little confusing. After competitor analysis, card sorting, tree testing, usability testing, and more, I created a Figma prototype of a re-structured Icy Veins.",
+        "view_msg": "See Prototype",
+        "view_link": "https://www.figma.com/proto/sAkLO6h2VorTAoJSkPU5cR/UX205-Wireframes?node-id=2-3&node-type=canvas&t=z40JLLpOQyub5DnK-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3"
       },
       {
-        "url": "https://images.unsplash.com/photo-1720887236665-43caad593cdf?q=80&w=1836&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "title": "Test Title 3",
+        "date": "2024",
+        "languages":[],
         "desc": "Test Description 3"
       },
       {
-        "url": "https://images.unsplash.com/photo-1720887236665-43caad593cdf?q=80&w=1836&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "title": "Test Title 4",
-        "desc": "Test Description 4"
+        "date": "2024",
+        "languages":[],
+        "desc": "Test Description 4",
+        "view_msg": "",
+        "view_link": ""
       }
 ]

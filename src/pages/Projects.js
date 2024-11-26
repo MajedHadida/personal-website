@@ -40,11 +40,29 @@ const Projects = () => {
             {/* Leaf div */}
             <div className="order-1 leaf-right shadow-xl w-[47%] px-6 py-4">
               <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
-                <h3 className="mb-3 font-bold text-gray-800 text-xl">{project.title}</h3>
-                <FaChevronDown/>
+              <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col">
+                <div>{project.title}</div>
+                <div className="text-base text-slate-500">{project.date}</div>
+              </h3>
+                {openProjectIndex === index && (
+                  <FaChevronUp/>
+                )}
+                {openProjectIndex !== index && (
+                  <FaChevronDown/>
+                )}
               </div>
               {openProjectIndex === index && (
-                <p className="text-gray-700 leading-tight">{project.desc}</p>
+                <>
+                  <hr className="mb-2 h-px bg-black border-0"></hr>
+                  {/* Iterate through "languages" array in each project to separate them to each "button" */}
+                  {project.languages.map((language, index) =>(
+                    <div className="btn btn-accent mr-1" style={{cursor:'default'}}>{language}</div>
+                  ))
+                  }
+                  <hr className="my-2 h-px bg-black border-0"></hr>
+                  <p className="text-gray-700 leading-tight">{project.desc}</p>
+                  <div className="flex justify-center"><a className="btn btn-secondary mt-2" href={project.view_link} target="_blank">{project.view_msg}</a></div>
+                </>
               )}
               
             </div>
@@ -57,11 +75,29 @@ const Projects = () => {
             {/* Leaf div */}
             <div className="order-1 leaf-left shadow-xl w-[47%] px-6 py-4">
               <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
-                <h3 className="mb-3 font-bold text-gray-800 text-xl">{project.title}</h3>
-                <FaChevronDown />
+                <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col">
+                  <div>{project.title}</div>
+                  <div className="text-base text-slate-500">{project.date}</div>
+                </h3>
+                {openProjectIndex === index && (
+                  <FaChevronUp/>
+                )}
+                {openProjectIndex !== index && (
+                  <FaChevronDown/>
+                )}
               </div>
               {openProjectIndex === index && (
-                <p className="text-gray-700 leading-tight">{project.desc}</p>
+                <>
+                  <hr className="mb-2 h-px bg-black border-0"></hr>
+                  {/* Iterate through "languages" array in each project to separate them to each "button" */}
+                  {project.languages.map((language, index) =>(
+                    <div className="btn btn-accent mr-1" style={{cursor:'default'}}>{language}</div>
+                  ))
+                  }
+                  <hr className="my-2 h-px bg-black border-0"></hr>
+                  <p className="text-gray-700 leading-tight">{project.desc}</p>
+                  <div className="flex justify-center"><a className="btn btn-secondary mt-2" href={project.view_link} target="_blank">{project.view_msg}</a></div>
+                </>
               )}
             </div>
             {/* left leaf stem */}

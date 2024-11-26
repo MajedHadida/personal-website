@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,13 +13,12 @@ html {
   scroll-behavior: smooth;
 }
 
-h1{
-  font-family: 'Halant', serif;
+h1 {
+  font-family: "Halant", serif;
 }
 
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -28,9 +27,7 @@ code {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 .halant-light {
@@ -64,8 +61,12 @@ code {
 }
 
 @keyframes moveClouds {
-  from { transform: translateX(-10%); } /* Start fully off-screen to the left */
-  to { transform: translateX(100vw); }    /* End fully off-screen to the right */
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
 .cloud {
   animation: fade-right 2s ease-out, moveClouds 60s linear infinite;
@@ -79,18 +80,28 @@ code {
 }
 
 @keyframes sway {
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(1deg); }
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
 }
 
-@keyframes stem-sway{
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(6deg); }
+@keyframes stem-sway {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
 }
 
-.stem-left{
+.stem-left {
   --tw-border-opacity: 1;
-    border-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-border-opacity)));
+  border-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-border-opacity)));
   border-width: 1px;
   width: 6%;
   position: absolute;
@@ -101,10 +112,9 @@ code {
   transform-origin: top right;
 }
 
-
-.stem-right{
+.stem-right {
   --tw-border-opacity: 1;
-    border-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-border-opacity)));
+  border-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-border-opacity)));
   border-width: 1px;
   width: 6%;
   position: absolute;
@@ -115,37 +125,32 @@ code {
   transform-origin: top left;
 }
 
-.leaf-right{
-  background-color: #80AF81;
+.leaf-right {
+  background-color: #80af81;
   border-radius: 40px 10px;
   position: relative;
   animation: sway 4s ease-in-out infinite;
 }
 
-.leaf-right:hover{
+.leaf-right:hover {
   animation: paused;
 }
 
-.leaf-left{
-  background-color: #80AF81;
+.leaf-left {
+  background-color: #80af81;
   border-radius: 10px 40px;
   position: relative;
   animation: sway 4s ease-in-out infinite;
 }
 
-.leaf-left:hover{
+.leaf-left:hover {
   animation: paused;
 }
 
-
-
-.branch-stem{
+.branch-stem {
   width: 0;
-	height: 0;
+  height: 0;
   border-left: 7px solid transparent;
-	border-right: 7px solid transparent;
-	border-bottom: 25px solid #555;
+  border-right: 7px solid transparent;
+  border-bottom: 25px solid #555;
 }
-
-
-
