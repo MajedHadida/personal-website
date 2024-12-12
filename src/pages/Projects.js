@@ -16,8 +16,8 @@ const Projects = () => {
 
   //HTML
   return (
-    <div class="container mx-auto px-4 py-8">
-      <div class="relative wrap overflow-hidden">
+    <div className="container mx-auto px-4 py-8">
+      <div className="relative wrap overflow-hidden">
       {/* Top leaf title */}
       <div className="relative pt-5">
       <div className="bg-base-100 w-1/2 leaf-left flex justify-center">
@@ -27,7 +27,7 @@ const Projects = () => {
       <div className="stem-left"></div>
       </div>
       
-      <div class="absolute border-base-100 h-full border-2 left-1/2"></div>
+      <div className="absolute border-base-100 h-full border-2 left-1/2"></div>
       {projects.map((project, index) => (
       <div key={index} className="mb-8 flex justify-between items-center w-full right-timeline relative">
         {/* Right leaf condition */}

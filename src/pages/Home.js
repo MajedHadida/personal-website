@@ -5,26 +5,29 @@ import Footer from '../components/Footer'
 import Projects from './Projects'
 import Blog from './Blog'
 import Contact from './Contact'
+import Tools from './Tools'
  
 const Home = () =>{
-    const [scrollYPosition, setScrollYPosition] = React.useState(0);
-
-    const handleScroll = () => {
-        const newScrollYPosition = window.pageYOffset;
-        setScrollYPosition(newScrollYPosition);
-    };
 
     React.useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            let el = document.getElementById('cloud');
+            if(el){
+                el.style.setProperty('--rand', Math.random());
+                const computedStyle = getComputedStyle(el);
+                console.log('Value of --rand:', computedStyle.getPropertyValue('--rand'));
+            }
         };
+        
+
     }, []);
 
+
+    
     return (
-        <div className='bg-primary overflow-x-hidden'>
+        <div className='bg-primary overflow-x-hidden relative'>
             <Navigationbar/>
-            <div className="cloud"></div>
+            <div className="cloud absolute" id="cloud"></div>
             <div id="main" className='flex justify-center align-middle'>
                 <div className='flex flex-col min-h-screen justify-center' id='body'>
                     <div className='text-3xl'>
@@ -41,6 +44,10 @@ const Home = () =>{
                     </div>
                 </div>
                 <img src={plant} alt='plant icon' className='h-48 self-center'/>
+            </div>
+
+            <div>
+                <Tools/>
             </div>
 
             <div id="projects">
