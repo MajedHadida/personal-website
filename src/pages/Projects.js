@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa";
 import projects from "./projects.json"
@@ -7,6 +7,7 @@ import projects from "./projects.json"
 
 
 const Projects = () => {
+      
 
   const [openProjectIndex, setOpenProjectIndex] = useState(null)
 
@@ -38,7 +39,7 @@ const Projects = () => {
             {/* Right leaf stem */}
             <div className="stem-right"></div>
             {/* Leaf div */}
-            <div className="order-1 leaf-right shadow-xl w-[47%] px-6 py-4">
+            <div className="order-1 leaf-right shadow-xl w-[47%] px-6 py-4 z-[1]">
               <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
               <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col">
                 <div>{project.title}</div>
@@ -109,7 +110,7 @@ const Projects = () => {
       </div>
       ))}
       </div>
-      {/* pot section */}
+      {/* branch section */}
       <div className="flex flex-col justify-center items-center relative">
         {/* <div className="absolute top-0 branch-stem"></div> */}
         <div className="w-screen h-[5vw] bg-[#B99470] border-black rotate-[355deg]"></div>

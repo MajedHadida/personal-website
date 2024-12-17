@@ -13,52 +13,52 @@ import { FaCss3Alt } from "react-icons/fa";
 
 const Tools = () =>{
     return(
-        <div className="mx-24">
+        <div className="container mx-auto">
             <div>
                 <h1 className="text-xl underline"><b>My Toolkit</b></h1>
             </div>
-            <div className="flex justify-around flex-wrap py-5 space-y-5">
-                <div className="flex flex-col items-center justify-center basis-1/5">
+            <ul className="flex justify-center flex-wrap py-5 space-y-5">
+                <li className="flex flex-col items-center justify-center pt-5">
                     <RxAccessibility size={75}/>
                     <p className="text-center">Accessibility</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5 mt-5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <FaAngular size={75}/>
                     <p className="">Angular</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <FaCss3Alt size={75}/>
                     <p className="text-center">CSS3</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <FaFigma size={75}/>
                     <p className="text-center">Figma</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <FaHtml5 size={75}/>
                     <p className="text-center">HTML5</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <IoLogoJavascript size={75}/>
                     <p className="text-center">Javascript</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <FaPython size={75}/>
                     <p className="text-center">Python</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <FaReact size={75}/>
                     <p className="text-center">React</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <RiTailwindCssFill size={75}/>
                     <p className="text-center">Tailwind</p>
-                </div>
-                <div className="flex flex-col items-center justify-center basis-1/5">
+                </li>
+                <li className="flex flex-col items-center justify-center">
                     <TbBrandTypescript size={75}/>
                     <p className="text-center">Typescript</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     );
 }

@@ -5,7 +5,7 @@ import leaf from '../../assets/leaf.png';
 
 const Navigationbar = () => {
     return(
-    <div className="navbar rounded-box bg-primary rounded-t-none fixed top-0">
+    <div className="navbar rounded-box bg-primary rounded-t-none fixed top-0 z-10">
       <div className="flex-1">
         <a href='#main' className="btn btn-ghost text-xl normal-case hover:bg-transparent"><img src={leaf} width={40}></img> Majed</a>
       </div>

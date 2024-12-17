@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import plant from '../assets/plant.png'
 import Navigationbar from '../components/Navigationbar/Navigationbar'
 import Footer from '../components/Footer'
@@ -9,6 +9,23 @@ import Tools from './Tools'
  
 const Home = () =>{
 
+//   const containerRef = useRef(null)
+
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(entries => {
+//       entries.forEach(element => {
+//           if (element.isIntersecting){
+//               element.target.classList.add('animate-fade-right-3s');
+//           }
+//       });
+//     });
+//     observer.observe(containerRef.current);
+//     return () => {
+//       observer.disconnect()
+//     };
+//   }, []);  
+
+
     React.useEffect(() => {
         return () => {
             let el = document.getElementById('cloud');
@@ -18,12 +35,8 @@ const Home = () =>{
                 console.log('Value of --rand:', computedStyle.getPropertyValue('--rand'));
             }
         };
-        
-
     }, []);
 
-
-    
     return (
         <div className='bg-primary overflow-x-hidden relative'>
             <Navigationbar/>
@@ -44,10 +57,6 @@ const Home = () =>{
                     </div>
                 </div>
                 <img src={plant} alt='plant icon' className='h-48 self-center'/>
-            </div>
-
-            <div>
-                <Tools/>
             </div>
 
             <div id="projects">
