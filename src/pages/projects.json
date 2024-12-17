@@ -1,32 +1,42 @@
 [
-    {
-        "title": "Personal Website",
-        "date": "November 2024",
-        "languages":["React","DaisyUI","Tailwind","JavaScript"],
-        "desc": "The very site you are on right now! This website will be my hub of where I showcase all my projects, mostly focused on frontend development but I may explore other types of projects.",
-        "view_msg":"Source Code",
-        "view_link": "https://github.com/MajedHadida/personal-website"
-      },
-      {
-        "title": "Icy Veins Wireframes/Prototype",
-        "date": "October 2024",
-        "languages":["Figma", "Optimal Workshop"],
-        "desc": "Icy Veins is A website that provides guide & news on a variety of games, focusing on MMORPGs. However, I believe Icy Veins' navigation system can be a little confusing. After competitor analysis, card sorting, tree testing, usability testing, and more, I created a Figma prototype of a re-structured Icy Veins.",
-        "view_msg": "See Prototype",
-        "view_link": "https://www.figma.com/proto/sAkLO6h2VorTAoJSkPU5cR/UX205-Wireframes?node-id=2-3&node-type=canvas&t=z40JLLpOQyub5DnK-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3"
-      },
-      {
-        "title": "Test Title 3",
-        "date": "2024",
-        "languages":[],
-        "desc": "Test Description 3"
-      },
-      {
-        "title": "Test Title 4",
-        "date": "2024",
-        "languages":[],
-        "desc": "Test Description 4",
-        "view_msg": "",
-        "view_link": ""
-      }
+  {
+    "title": "Book Recommendation System",
+    "date": "November 2024",
+    "languages":["Python","Jupyter Notebook"],
+    "desc": "Group project from my Data Mining course where we created a hybrid book recommendation system using a combination of content-based and collaborative filtering system with an interactive GUI.",
+    "view_msg":"Source Code",
+    "view_link": ""
+  },
+  {
+    "title": "Personal Website",
+    "date": "November 2024",
+    "languages":["React","DaisyUI","Tailwind","JavaScript"],
+    "desc": "The very site you are on right now! This website will be my hub of where I showcase all my projects, mostly focused on frontend development but I may explore other types of projects.",
+    "view_msg":"Source Code",
+    "view_link": "https://github.com/MajedHadida/personal-website"
+  },
+  {
+    "title": "Icy Veins Wireframes/Prototype",
+    "date": "October 2024",
+    "languages":["Figma", "Optimal Workshop"],
+    "desc": "Icy Veins is A website that provides guide & news on a variety of games, focusing on MMORPGs. However, I believe Icy Veins' navigation system can be a little confusing. After competitor analysis, card sorting, tree testing, usability testing, and more, I created a Figma prototype of a re-structured Icy Veins.",
+    "view_msg": "See Prototype",
+    "view_link": "https://www.figma.com/proto/sAkLO6h2VorTAoJSkPU5cR/UX205-Wireframes?node-id=2-3&node-type=canvas&t=z40JLLpOQyub5DnK-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3"
+  },
+  {
+    "title": "Fridge Buddy",
+    "date": "July 2024",
+    "languages":["React","DaisyUI", "Tailwind","JavaScript"],
+    "desc": "A front-end prototype made using React, Tailwind, and DaisyUI of a smart fridge app that displays/manages inventory, recipes, play music, and more.",
+    "view_msg": "Source Code",
+    "view_link": "https://github.com/MajedHadida/fridge-buddy"
+  },
+  {
+    "title": "Test Title 4",
+    "date": "2024",
+    "languages":[],
+    "desc": "Test Description 4",
+    "view_msg": "",
+    "view_link": ""
+  }
 ]
