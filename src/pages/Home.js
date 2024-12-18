@@ -37,10 +37,20 @@ const Home = () =>{
         };
     }, []);
 
+    function setCloud(){
+        console.log("onanimationend")
+        let el = document.getElementById('cloud');
+        if(el){
+            el.style.animation = "none";
+            el.style.setProperty("--rand", Math.random());
+            el.style.animation = "fade-right 2s ease-out, moveClouds 60s linear"
+        }
+    }
+
     return (
         <div className='bg-primary overflow-x-hidden relative'>
             <Navigationbar/>
-            <div className="cloud absolute" id="cloud"></div>
+            <div className="cloud absolute" id="cloud" onAnimationEnd={setCloud}></div>
             <div id="main" className='flex justify-center align-middle'>
                 <div className='flex flex-col min-h-screen justify-center' id='body'>
                     <div className='text-3xl'>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  background-color: #D6EFD8;
+  background-color: #d6efd8;
 }
 
 body {
@@ -75,7 +75,7 @@ code {
 }
 .cloud {
   --rand: 0.5;
-  animation: fade-right 2s ease-out, moveClouds 60s linear infinite;
+  animation: fade-right 2s ease-out, moveClouds 60s linear;
   background-color: #ffffff;
   position: absolute;
   top: calc(var(--rand) * 100%);
@@ -151,6 +151,13 @@ code {
 
 .leaf-left:hover {
   animation: paused;
+}
+
+.budding-leaf {
+  background-color: #80af81;
+  border-radius: 40px 10px;
+  width: 10%;
+  animation: sway 4s ease-in-out infinite;
 }
 
 .branch-stem {
