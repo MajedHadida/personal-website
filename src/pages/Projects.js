@@ -29,15 +29,7 @@ const Projects = () => {
       </div>
       
       <div className="absolute border-base-100 h-full border-2 left-1/2"></div>
-      {/* budding leaf */}
-      <div className="mb-8 flex justify-between items-center w-full right-timeline relative">
-      {/* empty div to keep leaf on right side */}
-      <div className="order-1 w-5/12"></div>
-      {/* right leaf stem */}
-      <div className="stem-right"></div>
-      <div className="order-2 budding-leaf shadow-xl w-[47%] px-6 py-4 z-[1]"></div>
-      <div className="order-3 w-1/4"></div>
-      </div>
+      
 
       {projects.map((project, index) => (
       <div key={index} className="mb-8 flex justify-between items-center w-full right-timeline relative">
@@ -47,6 +39,8 @@ const Projects = () => {
           <>
             {/* empty div to keep leaf on right side */}
             <div className="order-1 w-5/12"></div>
+            <div className="bud-stem-left"></div>
+            <div className="order-2 budding-leaf-left shadow-xl w-[47%] px-6 py-4 z-[1]"></div>
             {/* Right leaf stem */}
             <div className="stem-right"></div>
             {/* Leaf div */}
@@ -114,6 +108,9 @@ const Projects = () => {
             </div>
             {/* left leaf stem */}
             <div className="stem-left"></div>
+            <div className="bud-stem-right"></div>
+            <div className="order-2 budding-leaf-right shadow-xl w-[47%] px-6 py-4 z-[1]"></div>
+            
             {/* empty div to keep leaf on left side */}
             <div className="order-1 w-5/12"></div>
           </>

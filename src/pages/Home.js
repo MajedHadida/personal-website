@@ -78,8 +78,10 @@ const Home = () =>{
             </div>
 
             <div id="contact">
+                <Tools/>
                 <Contact/>
             </div>
+
 
             <Footer/>
         

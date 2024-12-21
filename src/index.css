@@ -95,6 +95,16 @@ code {
   }
 }
 
+@keyframes bud-sway {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
 @keyframes stem-sway {
   0%,
   100% {
@@ -102,6 +112,16 @@ code {
   }
   50% {
     transform: rotate(6deg);
+  }
+}
+
+@keyframes bud-stem-sway {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
   }
 }
 
@@ -131,6 +151,32 @@ code {
   transform-origin: top left;
 }
 
+.bud-stem-right {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-border-opacity)));
+  border-width: 1px;
+  width: 6%;
+  position: absolute;
+  left: 50%;
+  rotate: 345deg;
+  bottom: 0.25rem;
+  animation: bud-stem-sway 4s ease-in-out infinite;
+  transform-origin: top left;
+}
+
+.bud-stem-left {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-border-opacity)));
+  border-width: 1px;
+  width: 6%;
+  position: absolute;
+  right: 50%;
+  rotate: 15deg;
+  bottom: 0.25rem;
+  animation: bud-stem-sway 4s ease-in-out infinite;
+  transform-origin: top right;
+}
+
 .leaf-right {
   background-color: #80af81;
   border-radius: 40px 10px;
@@ -153,11 +199,24 @@ code {
   animation: paused;
 }
 
-.budding-leaf {
+.budding-leaf-right {
+  position: absolute;
+  left: 53%;
+  top: 55%;
   background-color: #80af81;
   border-radius: 40px 10px;
   width: 10%;
-  animation: sway 4s ease-in-out infinite;
+  animation: bud-sway 4s ease-in-out infinite;
+}
+
+.budding-leaf-left {
+  position: absolute;
+  left: 37%;
+  top: 55%;
+  background-color: #80af81;
+  border-radius: 10px 40px;
+  width: 10%;
+  animation: bud-sway 4s ease-in-out infinite;
 }
 
 .branch-stem {
@@ -166,4 +225,20 @@ code {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-bottom: 25px solid #555;
+}
+
+.skills {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills li {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
