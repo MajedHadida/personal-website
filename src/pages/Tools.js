@@ -13,8 +13,8 @@ import { FaCss3Alt } from "react-icons/fa";
 
 const Tools = () =>{
     return(
-        <div className="container mx-28">
-            <div>
+        <div className="mx-28 my-5">
+            <div className="mb-5">
                 <h1 className="text-xl underline"><b>My Toolkit</b></h1>
             </div>
             <ul className="skills">

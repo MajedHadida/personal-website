@@ -38,13 +38,14 @@ const Projects = () => {
         {index % 2 === 0 && (
           <>
             {/* empty div to keep leaf on right side */}
-            <div className="order-1 w-5/12"></div>
+            <div className="order-1 w-4/12"></div>
             <div className="bud-stem-left"></div>
-            <div className="order-2 budding-leaf-left shadow-xl w-[47%] px-6 py-4 z-[1]"></div>
+            <div className="order-2 budding-leaf-left shadow-xl w-[47%] px-1 py-5 z-[1]">
+            </div>
             {/* Right leaf stem */}
             <div className="stem-right"></div>
             {/* Leaf div */}
-            <div className="order-1 leaf-right shadow-xl w-[47%] px-6 py-4 z-[1]">
+            <div className="order-3 leaf-right shadow-xl w-[47%] px-6 py-4 z-[1]">
               <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
               <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col">
                 <div>{project.title}</div>

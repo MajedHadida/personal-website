@@ -210,9 +210,7 @@ code {
 }
 
 .budding-leaf-left {
-  position: absolute;
-  left: 37%;
-  top: 55%;
+  position: relative;
   background-color: #80af81;
   border-radius: 10px 40px;
   width: 10%;
@@ -228,10 +226,10 @@ code {
 }
 
 .skills {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .skills li {
