@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa";
 import projects from "./projects.json"
+import { PiRanking } from "react-icons/pi";
+
 
 
 
@@ -10,6 +12,21 @@ const Projects = () => {
       
 
   const [openProjectIndex, setOpenProjectIndex] = useState(null)
+
+  // const DynamicIcon = ({ iconName }) => {
+  //   try {
+  //     const iconComp = require('react-icons/fa')[iconName];
+  //     console.log(iconComp)
+  //     if (iconComp === undefined){
+  //       console.log("test")
+  //       iconComp = require('react-icons/fa6')[iconName];
+  //     } 
+  //     return iconComp ? <iconComp/> : null;
+  //   } catch (error) {
+  //     console.error(`Icon: "${iconName}" not found`);
+  //     return null;
+  //   }
+  // }
 
   function toggle(index){
     setOpenProjectIndex(openProjectIndex === index ? null : index)

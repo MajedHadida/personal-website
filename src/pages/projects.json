@@ -1,6 +1,16 @@
 [
   {
+    "title": "Top Ten Games",
+    "icon": "FaRankingStar",
+    "date": "January 2025",
+    "languages":["Next.js","Tailwind"],
+    "desc": "Rank your favourite ten games and share it with your friends! Created by my brother, but I helped renovate the frontend side of this website.",
+    "view_msg":"View",
+    "view_link": "https://top-ten-games-mocha.vercel.app/"
+  },
+  {
     "title": "Book Recommendation System",
+    "icon": "",
     "date": "November 2024",
     "languages":["Python","Jupyter Notebook"],
     "desc": "Group project from my Data Mining course where we created a hybrid book recommendation system using a combination of content-based and collaborative filtering system with an interactive GUI.",
@@ -9,6 +19,7 @@
   },
   {
     "title": "Personal Website",
+    "icon": "",
     "date": "November 2024",
     "languages":["React","DaisyUI","Tailwind","JavaScript"],
     "desc": "The very site you are on right now! This website will be my hub of where I showcase all my projects, mostly focused on frontend development but I may explore other types of projects.",
@@ -17,6 +28,7 @@
   },
   {
     "title": "Icy Veins Wireframes/Prototype",
+    "icon": "",
     "date": "October 2024",
     "languages":["Figma", "Optimal Workshop"],
     "desc": "Icy Veins is A website that provides guide & news on a variety of games, focusing on MMORPGs. However, I believe Icy Veins' navigation system can be a little confusing. After competitor analysis, card sorting, tree testing, usability testing, and more, I created a Figma prototype of a re-structured Icy Veins.",
@@ -25,18 +37,11 @@
   },
   {
     "title": "Fridge Buddy",
+    "icon": "",
     "date": "July 2024",
     "languages":["React","DaisyUI", "Tailwind","JavaScript"],
     "desc": "A front-end prototype made using React, Tailwind, and DaisyUI of a smart fridge app that displays/manages inventory, recipes, play music, and more.",
     "view_msg": "Source Code",
     "view_link": "https://github.com/MajedHadida/fridge-buddy"
-  },
-  {
-    "title": "Test Title 4",
-    "date": "2024",
-    "languages":[],
-    "desc": "Test Description 4",
-    "view_msg": "",
-    "view_link": ""
   }
 ]
