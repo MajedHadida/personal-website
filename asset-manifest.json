@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.8e91588c.css",
-    "main.js": "/personal-website/static/js/main.f3eb986a.js",
+    "main.css": "/personal-website/static/css/main.6a62d92e.css",
+    "main.js": "/personal-website/static/js/main.dd5c6a64.js",
     "static/js/453.68f06bdf.chunk.js": "/personal-website/static/js/453.68f06bdf.chunk.js",
     "static/media/studying.png": "/personal-website/static/media/studying.74a29a177836c9637182.png",
+    "static/media/TyrandeNew.gif": "/personal-website/static/media/TyrandeNew.bbe537d08086e17dbda0.gif",
+    "static/media/Pikachu.gif": "/personal-website/static/media/Pikachu.7a173cfdd9b4aa3dfcea.gif",
+    "static/media/Donkey.gif": "/personal-website/static/media/Donkey.7057ed0dd5a6428c7a75.gif",
     "static/media/leaf.png": "/personal-website/static/media/leaf.8b863a313e39bcdc0197.png",
+    "static/media/Desert.png": "/personal-website/static/media/Desert.bae1c6ae9b7de8ba0f10.png",
+    "static/media/MaterialsBanner.png": "/personal-website/static/media/MaterialsBanner.b3b1e3d4dfa0e9e64add.png",
     "static/media/plant.png": "/personal-website/static/media/plant.3dd7086c83c6ff8818ce.png",
     "index.html": "/personal-website/index.html",
-    "main.8e91588c.css.map": "/personal-website/static/css/main.8e91588c.css.map",
-    "main.f3eb986a.js.map": "/personal-website/static/js/main.f3eb986a.js.map",
+    "main.6a62d92e.css.map": "/personal-website/static/css/main.6a62d92e.css.map",
+    "main.dd5c6a64.js.map": "/personal-website/static/js/main.dd5c6a64.js.map",
     "453.68f06bdf.chunk.js.map": "/personal-website/static/js/453.68f06bdf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e91588c.css",
-    "static/js/main.f3eb986a.js"
+    "static/css/main.6a62d92e.css",
+    "static/js/main.dd5c6a64.js"
   ]
 }
