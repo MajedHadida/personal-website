@@ -165,16 +165,14 @@ code {
 }
 
 .bud-stem-left {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-border-opacity)));
-  border-width: 1px;
-  width: 6%;
+  width: 100%;
+  height: 2px;
+  background-color: #80af81;
   position: absolute;
-  right: 50%;
-  rotate: 15deg;
-  bottom: 0.25rem;
-  animation: bud-stem-sway 4s ease-in-out infinite;
-  transform-origin: top right;
+  top: 50%;
+  transform: rotate(20deg);
+  border-radius: 3px;
+  margin-top: 20px
 }
 
 .leaf-right {
@@ -210,10 +208,13 @@ code {
 }
 
 .budding-leaf-left {
-  position: relative;
   background-color: #80af81;
+  margin-right: 50px;
+  width: 120px;
+  height: 50px;
   border-radius: 10px 40px;
-  width: 10%;
+  transform: rotate(-15deg);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
   animation: bud-sway 4s ease-in-out infinite;
 }
 

@@ -56,9 +56,12 @@ const Projects = () => {
           <>
             {/* empty div to keep leaf on right side */}
             <div className="order-1 w-4/12"></div>
-            <div className="bud-stem-left"></div>
-            <div className="order-2 budding-leaf-left shadow-xl w-[47%] px-1 py-5 z-[1]">
+            <div className="order-2 relative flex items-center">
+              <div className="bud-stem-left"></div>
+              <div className="budding-leaf-left shadow-xl w-[47%] px-1 py-5 z-[1]"></div>
             </div>
+            
+            
             {/* Right leaf stem */}
             <div className="stem-right"></div>
             {/* Leaf div */}

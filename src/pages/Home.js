@@ -73,9 +73,9 @@ const Home = () =>{
                 <Projects/>
             </div>
 
-            <div id="blog">
+            {/* <div id="blog">
                 <Blog/>
-            </div>
+            </div> */}
 
             <div id="contact">
                 <Tools/>
