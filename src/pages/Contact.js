@@ -55,7 +55,7 @@ const Contact = () => {
                     src={tymalf} alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-contain object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg"
                     src={amethyst} alt="gallery-photo" />
                 </div>
                 <div>

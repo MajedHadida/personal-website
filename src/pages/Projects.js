@@ -13,21 +13,6 @@ const Projects = () => {
 
   const [openProjectIndex, setOpenProjectIndex] = useState(null)
 
-  // const DynamicIcon = ({ iconName }) => {
-  //   try {
-  //     const iconComp = require('react-icons/fa')[iconName];
-  //     console.log(iconComp)
-  //     if (iconComp === undefined){
-  //       console.log("test")
-  //       iconComp = require('react-icons/fa6')[iconName];
-  //     } 
-  //     return iconComp ? <iconComp/> : null;
-  //   } catch (error) {
-  //     console.error(`Icon: "${iconName}" not found`);
-  //     return null;
-  //   }
-  // }
-
   function toggle(index){
     setOpenProjectIndex(openProjectIndex === index ? null : index)
   }
@@ -56,9 +41,9 @@ const Projects = () => {
           <>
             {/* empty div to keep leaf on right side */}
             <div className="order-1 w-4/12"></div>
-            <div className="order-2 relative flex items-center">
-              <div className="bud-stem-left"></div>
-              <div className="budding-leaf-left shadow-xl w-[47%] px-1 py-5 z-[1]"></div>
+            <div className="left-budding-wrapper">
+              <div className="order-2 budding-leaf-left shadow-xl w-[47%] px-6 py-4 z-[1]"></div>
+              
             </div>
             
             
@@ -129,8 +114,10 @@ const Projects = () => {
             </div>
             {/* left leaf stem */}
             <div className="stem-left"></div>
-            <div className="bud-stem-right"></div>
-            <div className="order-2 budding-leaf-right shadow-xl w-[47%] px-6 py-4 z-[1]"></div>
+            <div className="right-budding-wrapper">
+              <div className="order-2 budding-leaf-right shadow-xl w-[47%] px-6 py-4 z-[1]"></div>
+            </div>
+            
             
             {/* empty div to keep leaf on left side */}
             <div className="order-1 w-5/12"></div>

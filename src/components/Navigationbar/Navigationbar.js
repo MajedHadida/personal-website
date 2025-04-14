@@ -13,7 +13,7 @@ const Navigationbar = () => {
         <a href='#main' className="btn btn-ghost hover:bg-secondary hover:text-white font-bold rounded-3xl">Home</a>
         <a href='#projects' className='btn btn-ghost hover:bg-secondary hover:text-white font-bold rounded-3xl'>Projects</a>
         {/* <a href='#blog' className='btn btn-ghost hover:bg-secondary hover:text-white font-bold rounded-3xl'>Blog</a> */}
-        <a href='#contact' className='btn btn-ghost hover:bg-secondary hover:text-white font-bold rounded-3xl'>Contact</a>
+        <a href='#contact' className='btn btn-ghost hover:bg-secondary hover:text-white font-bold rounded-3xl'>About Me</a>
       </div>
 
     </div>

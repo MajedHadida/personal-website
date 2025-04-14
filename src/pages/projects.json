@@ -1,7 +1,7 @@
 [
   {
-    "title": "Top Ten Games",
-    "icon": "FaRankingStar",
+    "title": "🎮 Top Ten Games",
+    "icon": "",
     "date": "January 2025",
     "languages":["Next.js","Tailwind"],
     "desc": "Rank your favourite ten games and share it with your friends! Created by my brother, but I helped renovate the frontend side of this website.",
@@ -9,7 +9,7 @@
     "view_link": "https://top-ten-games-mocha.vercel.app/"
   },
   {
-    "title": "Book Recommendation System",
+    "title": "📚 Book Recommendation System",
     "icon": "",
     "date": "November 2024",
     "languages":["Python","Jupyter Notebook"],
