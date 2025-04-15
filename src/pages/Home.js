@@ -63,7 +63,7 @@ const Home = () =>{
                     <p className='text-4xl animate-fade-right-3s'>I'm a front-end developer.</p>
                     </div>
                     <div className='animate-fade-right-3s'>
-                    <span className='text-2xl italic'>I also minor in user experience </span><span>😁</span>
+                    <span className='text-2xl italic'>Aspiring to be a full-stack developer </span><span>😁</span>
                     </div>
                 </div>
                 <img src={plant} alt='plant icon' className='h-48 self-center'/>
@@ -77,7 +77,7 @@ const Home = () =>{
                 <Blog/>
             </div> */}
 
-            <div id="contact">
+            <div id="contact" className="mt-16">
                 <Tools/>
                 <Contact/>
             </div>

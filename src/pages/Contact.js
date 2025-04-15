@@ -21,45 +21,45 @@ const Contact = () => {
                 <h1 className='text-5xl font-bold'>My Pixel Art!</h1>
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                 <div>
-                    <img class="object-contain object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={materialsBanner}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-contain object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={checkGif}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-contain object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src= {crossGif}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-contain object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={desert}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-contain object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={sunset}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={pikachu}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={tymalf} alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={amethyst} alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-contain object-center w-full h-40 max-w-full rounded-lg"
+                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
                     src={donkey}
                     alt="gallery-photo" />
                 </div>
@@ -67,18 +67,18 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col container bg-base-100 col-span-1 row-span-1 rounded-lg p-5'>
                     <h1 className='text-3xl text-left'>A little about me</h1>
-                    <p>Nature lover and a pixel art enthusiast. If I'm not coding, you'll find me playing video games (usually cozy games or MMORPGs... <i>add me on Steam!</i>), doing pixel art, or out on a hike!</p>
+                    <p>Nature lover and a pixel art enthusiast. I have a minor in UX design, so I love making user-centric designs. If I'm not coding, you'll find me playing video games (usually cozy games or MMORPGs... <i>add me on Steam!</i>), doing pixel art, or out on a hike!</p>
                 </div>
                 <div className='flex flex-col container bg-base-100 col-span-1 row-span-2 rounded-lg p-5'>
-                    <div className='flex flex-row'>
-                        <h1 className='text-3xl text-left'><b>Status:</b></h1>
-                        <div className='flex items-center justify-center bg-secondary w-full mx-5 rounded-3xl'>
-                            <h1 className='text-primary animate-pulse animate-infinite tracking-widest text-2xl'>Studying</h1>
+                    <div className='flex flex-col'>
+                        <h1 className='text-3xl text-left'>Currently working on...</h1>
+                        <div className='flex items-center justify-center bg-secondary w-full rounded-3xl mt-5'>
+                            <h1 className='text-primary animate-pulse animate-infinite tracking-widest text-2xl'>This website!</h1>
                         </div>
                     </div>
-                    <div className='flex justify-center pt-5'>
+                    {/* <div className='flex justify-center pt-5'>
                         <img src={studying} width={300}></img>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

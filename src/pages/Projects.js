@@ -23,8 +23,9 @@ const Projects = () => {
       <div className="relative wrap overflow-hidden">
       {/* Top leaf title */}
       <div className="relative pt-5">
-      <div className="bg-base-100 w-1/2 leaf-left flex justify-center">
-        <h1 className="text-3xl font-bold my-3">Projects</h1>
+      <div className="bg-base-100 w-1/2 leaf-left flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-bold mt-3">Projects</h1>
+        <p><i>Click on a leaf for more details!</i></p>
       </div>
       {/* left leaf stem */}
       <div className="stem-left"></div>

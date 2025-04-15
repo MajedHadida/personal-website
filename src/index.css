@@ -232,18 +232,70 @@ code {
   border-bottom: 25px solid #555;
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
 .skills {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  overflow: hidden;
+  padding: 60px 0;
+  background: #80af81;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skills:before,
+.skills:after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.skills:before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #d6efd8);
+}
+
+.skills:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #d6efd8);
+}
+
+.skills:hover .skills li {
+  animation-play-state: paused;
 }
 
 .skills li {
-  width: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: inline-block;
+  margin-right: 5%;
+  animation: 35s slide infinite linear;
 }
+
+.skills li img{
+  height: 50px;
+  margin: 0 40px;
+}
+
+.skills li p{
+  text-align: center;
+}
+
+.pixelArt {
+  transition:transform 0.25s ease;
+}
+
+.pixelArt:hover{
+  object-fit: contain;
+  -webkit-transform:scale(1.5);
+  transform:scale(1.5);
+}
+
+
