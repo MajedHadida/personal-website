@@ -75,11 +75,13 @@ code {
 }
 .cloud {
   --rand: 0.5;
-  animation: fade-right 2s ease-out, moveClouds 60s linear;
+  animation: fade-right 2s ease-out, moveClouds 60s infinite;
   background-color: #ffffff;
+  --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+  mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
   position: absolute;
   top: calc(var(--rand) * 100%);
-  width: 100px;
+  width: 200px;
   height: 100px;
   border-radius: 40px;
   z-index: 0;
