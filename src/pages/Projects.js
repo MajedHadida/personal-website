@@ -25,7 +25,7 @@ const Projects = () => {
       <div className="relative pt-5">
       <div className="bg-base-100 w-1/2 leaf-left flex flex-col justify-center items-center">
         <h1 className="text-3xl font-bold mt-3">Projects</h1>
-        <p><i>Click on a leaf for more details!</i></p>
+        <p className="px-5 text-sm lg:text-base"><i>Click on a leaf for more details!</i></p>
       </div>
       {/* left leaf stem */}
       <div className="stem-left"></div>
@@ -86,11 +86,11 @@ const Projects = () => {
         {index % 2 !== 0 && (
           <>
             {/* Leaf div */}
-            <div className="order-1 leaf-left shadow-xl w-[47%] px-6 py-4">
-              <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
-                <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col">
-                  <div>{project.title}</div>
-                  <div className="text-base text-slate-500">{project.date}</div>
+            <div className="order-1 leaf-left shadow-xl w-[47%] max-w-[47%] px-6 py-4">
+              <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex lg:justify-between">
+                <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col max-w-[80%]">
+                  <div className="lg:max-w-full max-w-[70%] hyphens-auto wrap-anywhere break-words">{project.title}</div>
+                  <div className="text-base text-slate-500 max-w-[47%]">{project.date}</div>
                 </h3>
                 {openProjectIndex === index && (
                   <FaChevronUp/>
