@@ -1,9 +1,8 @@
 import React from 'react';
 import Navigationbar from '../components/Navigationbar/Navigationbar';
-import studying from '../assets/studying.png';
 import materialsBanner from '../assets/pixelArt/MaterialsBanner.png'
-import checkGif from '../assets/pixelArt/Check.gif'
-import crossGif from '../assets/pixelArt/x.gif'
+import banditDefeat from '../assets/pixelArt/Bandit_Die.gif'
+import merchantSilk from '../assets/pixelArt/MerchantSilk_Idle.gif'
 import desert from '../assets/pixelArt/Desert.png'
 import sunset from '../assets/pixelArt/Sunset.png'
 import pikachu from '../assets/pixelArt/Pikachu.gif'
@@ -19,20 +18,21 @@ const Contact = () => {
             <div className='grid grid-cols-3 grid-rows-3 mx-28 gap-10 my-3' id='body'>
                 <div className='flex flex-col items-center container bg-base-100 col-span-2 row-span-3 rounded-lg p-5 z-10'>
                 <h1 className='text-5xl font-bold'>My Pixel Art!</h1>
+                <p className="px-5 text-sm lg:text-base"><i>Hover over an image for the full view.</i></p>
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                 <div>
-                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
-                    src={materialsBanner}
+                    <img class="object-center w-full max-w-full rounded-lg pixelArt"
+                    src={donkey}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
-                    src={checkGif}
+                    <img class="object-center w-full max-w-full rounded-lg pixelArt"
+                    src={banditDefeat}
                     alt="gallery-photo" />
                 </div>
                 <div>
-                    <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
-                    src= {crossGif}
+                    <img class="object-center w-full max-w-full rounded-lg pixelArt"
+                    src= {merchantSilk}
                     alt="gallery-photo" />
                 </div>
                 <div>
@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
                 <div>
                     <img class="object-cover object-center w-full h-40 max-w-full rounded-lg pixelArt"
-                    src={donkey}
+                    src={materialsBanner}
                     alt="gallery-photo" />
                 </div>
                 </div>
@@ -73,8 +73,12 @@ const Contact = () => {
                     <div className='flex flex-col'>
                         <h1 className='text-3xl text-left'>Currently working on...</h1>
                         <div className='flex items-center justify-center bg-secondary w-full rounded-3xl mt-5'>
-                            <h1 className='text-primary animate-pulse animate-infinite tracking-widest text-2xl'>This website!</h1>
+                            <h1 className='text-primary animate-pulse animate-infinite tracking-widest text-2xl'>A Minecraft Mod & Pixel Art</h1>
                         </div>
+                        <div className='flex items-center justify-center bg-secondary w-full rounded-3xl mt-5'>
+                            <a href='https://elfapixels.itch.io/the-wonders-of-caravan' target='_blank' rel="noreferrer"><button className='btn btn-ghost text-white hover:bg-secondary hover:text-black font-bold rounded-3xl'>See more pixel art</button></a>
+                        </div>
+                        
                     </div>
                     {/* <div className='flex justify-center pt-5'>
                         <img src={studying} width={300}></img>

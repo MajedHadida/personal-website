@@ -8,6 +8,8 @@ import { FaPython } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
+import { SiFlutter } from "react-icons/si";
+
 
 
 
@@ -57,6 +59,10 @@ const Tools = () =>{
                 <li>
                     <TbBrandTypescript size={75}/>
                     <p>Typescript</p>
+                </li>
+                <li>
+                    <SiFlutter size={75}/>
+                    <p>Flutter</p>
                 </li>
             </ul>
         </div>

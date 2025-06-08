@@ -1,5 +1,14 @@
 [
   {
+    "title": "👟 Fitness Fantasy",
+    "icon": "",
+    "date": "April 2025",
+    "languages":["Flutter"],
+    "desc": "A gamified fitness app that tracks your step count and rewards you in an RPG fashion. Go on epic journeys, level up, and complete quests!",
+    "view_msg":"Source Code",
+    "view_link": "https://github.com/MajedHadida/fitness_fantasy"
+  },
+  {
     "title": "🎮 Top Ten Games",
     "icon": "",
     "date": "January 2025",
