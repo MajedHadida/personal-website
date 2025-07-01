@@ -63,7 +63,7 @@ const Home = () =>{
                 </div>
                 <div className="flex flex-col min-h-screen justify-center">
                     <img src={pfp} width={300} alt='plant icon' className='self-center animate-fade-left-2s'/>
-                    <p className="lg:text-xl italic text-center pt-1">Nice to meet you!</p>
+                    <p className="lg:text-xl italic text-center pt-1 animate-fade-left-2s">Nice to meet you!</p>
                 </div>
             </div>
 
