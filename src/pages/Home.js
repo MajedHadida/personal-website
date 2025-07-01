@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import plant from '../assets/plant.png'
+import pfp from '../assets/pfp.png'
 import Navigationbar from '../components/Navigationbar/Navigationbar'
 import Footer from '../components/Footer'
 import Projects from './Projects'
@@ -45,17 +45,14 @@ const Home = () =>{
     return (
         <div className='bg-primary overflow-x-hidden relative'>
             <Navigationbar/>
-            <div className="cloud absolute z-0" id="cloud"></div>
+            <div className="cloud absolute z-[-1]" id="cloud"></div>
             {showCloud2 && (
-                <div className="cloud absolute z-0" id="cloud2"></div>
+                <div className="cloud absolute z-[-1]" id="cloud2"></div>
             )}
-            <div id="main" className='flex justify-center align-middle lg:px-0 px-10'>
+            <div id="main" className='flex justify-evenly align-middle lg:px-0 px-10'>
                 <div className='flex flex-col min-h-screen justify-center' id='body'>
-                    <div className='lg:text-3xl text-xl'>
-                    <p className="animate-fade-right-3s animate-duration z-10">Hello, I'm</p>
-                    </div>
-                    <div>
-                    <h1 className='lg:text-9xl text-4xl font-bold animate-fade-right-1s z-10'>Majed</h1>
+                    <div className='lg:text-4xl text-xl'>
+                    <p className="animate-fade-right-3s animate-duration z-10">Hi, I'm <b>Majed</b>!</p>
                     </div>
                     <div className=''>
                     <p className='lg:text-4xl text-xl animate-fade-right-3s z-10'>I'm a front-end developer.</p>
@@ -64,7 +61,10 @@ const Home = () =>{
                     <span className='lg:text-2xl text-lg italic'>Aspiring to be a full-stack developer </span><span>😁</span>
                     </div>
                 </div>
-                <img src={plant} alt='plant icon' className='lg:h-48 h-32 self-center'/>
+                <div className="flex flex-col min-h-screen justify-center">
+                    <img src={pfp} width={300} alt='plant icon' className='self-center animate-fade-left-2s'/>
+                    <p className="lg:text-xl italic text-center pt-1">Nice to meet you!</p>
+                </div>
             </div>
 
             <div id="projects">

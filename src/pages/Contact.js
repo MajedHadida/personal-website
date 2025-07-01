@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col container bg-base-100 col-span-1 row-span-1 rounded-lg p-5 z-10'>
                     <h1 className='text-3xl text-left'>A little about me</h1>
-                    <p>Nature lover and a pixel art enthusiast. I have a minor in UX design, so I love making user-centric designs. If I'm not coding, you'll find me playing video games (usually cozy games or MMORPGs... <i>add me on Steam!</i>), doing pixel art, or out on a hike!</p>
+                    <p>Thanks for taking the time to check out my page! As you can tell, I love making pixel art. When I'm not coding, I'm either drawing pixel art, out in nature, or gaming (especially MMORPGs or cozy games)</p>
                 </div>
                 <div className='flex flex-col container bg-base-100 col-span-1 row-span-2 rounded-lg p-5 z-10'>
                     <div className='flex flex-col'>
