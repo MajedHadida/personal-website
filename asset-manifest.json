@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.570028bf.css",
-    "main.js": "/personal-website/static/js/main.a0c262b9.js",
+    "main.css": "/personal-website/static/css/main.6b18e7dd.css",
+    "main.js": "/personal-website/static/js/main.49f783f9.js",
     "static/js/453.68f06bdf.chunk.js": "/personal-website/static/js/453.68f06bdf.chunk.js",
     "static/media/TyrandeNew.gif": "/personal-website/static/media/TyrandeNew.bbe537d08086e17dbda0.gif",
     "static/media/Pikachu.gif": "/personal-website/static/media/Pikachu.7a173cfdd9b4aa3dfcea.gif",
     "static/media/Bandit_Die.gif": "/personal-website/static/media/Bandit_Die.03868eff76cede8a0761.gif",
     "static/media/Donkey.gif": "/personal-website/static/media/Donkey.db136932eb1ac5283ae1.gif",
     "static/media/MerchantSilk_Idle.gif": "/personal-website/static/media/MerchantSilk_Idle.6a69af1349c9c441d955.gif",
-    "static/media/leaf.png": "/personal-website/static/media/leaf.8b863a313e39bcdc0197.png",
     "static/media/Desert.png": "/personal-website/static/media/Desert.bae1c6ae9b7de8ba0f10.png",
     "static/media/MaterialsBanner.png": "/personal-website/static/media/MaterialsBanner.b3b1e3d4dfa0e9e64add.png",
-    "static/media/plant.png": "/personal-website/static/media/plant.3dd7086c83c6ff8818ce.png",
     "index.html": "/personal-website/index.html",
-    "main.570028bf.css.map": "/personal-website/static/css/main.570028bf.css.map",
-    "main.a0c262b9.js.map": "/personal-website/static/js/main.a0c262b9.js.map",
+    "main.6b18e7dd.css.map": "/personal-website/static/css/main.6b18e7dd.css.map",
+    "main.49f783f9.js.map": "/personal-website/static/js/main.49f783f9.js.map",
     "453.68f06bdf.chunk.js.map": "/personal-website/static/js/453.68f06bdf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.570028bf.css",
-    "static/js/main.a0c262b9.js"
+    "static/css/main.6b18e7dd.css",
+    "static/js/main.49f783f9.js"
   ]
 }
