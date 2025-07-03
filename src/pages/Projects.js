@@ -90,7 +90,7 @@ const Projects = () => {
               <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex lg:justify-between">
                 <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col max-w-[80%]">
                   <div className="lg:max-w-full max-w-[70%] hyphens-auto wrap-anywhere break-words">{project.title}</div>
-                  <div className="text-base text-slate-500 max-w-[47%]">{project.date}</div>
+                  <div className="text-base text-[#2D462D] max-w-[47%]">{project.date}</div>
                 </h3>
                 {openProjectIndex === index && (
                   <FaChevronUp/>

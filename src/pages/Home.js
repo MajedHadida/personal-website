@@ -36,6 +36,7 @@ const Home = () =>{
                 // console.log('Value of --rand:', computedStyle.getPropertyValue('--rand'));
             }
             const timer = setTimeout(() => {
+                console.log("Show cloud 2");
                 setShowCloud2(true);
             }, 5000);
             return () => clearTimeout(timer);
