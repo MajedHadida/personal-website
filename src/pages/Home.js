@@ -50,7 +50,7 @@ const Home = () =>{
             {showCloud2 && (
                 <div className="cloud absolute z-[-1]" id="cloud2"></div>
             )}
-            <div id="main" className='flex justify-evenly align-middle lg:px-0 px-10'>
+            <div id="main" className='flex justify-evenly align-middle mx-10'>
                 <div className='flex flex-col min-h-screen justify-center' id='body'>
                     <div className='lg:text-4xl text-xl'>
                     <p className="animate-fade-right-3s animate-duration z-10">Hi, I'm <b>Majed</b>!</p>
@@ -68,12 +68,12 @@ const Home = () =>{
                 </div>
             </div>
 
-            <div className="mt-16 mb-5">
+            <div className="mt-16 mx-auto container">
                 <Tools/>
             </div>
             
 
-            <div id="projects">
+            <div className="mt-5 mx-auto container" id="projects">
                 <Projects/>
             </div>
 
@@ -81,7 +81,7 @@ const Home = () =>{
                 <Blog/>
             </div> */}
 
-            <div id="contact" className="mt-16 mb-5">
+            <div id="contact" className="mt-16 mb-5 mx-auto container">
                 <Contact/>
             </div>
 

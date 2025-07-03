@@ -33,7 +33,7 @@ module.exports = {
           'primary-focus': '#6E3DDE',
           'primary-content': '#ffffff',
           'secondary': '#633F8E',
-          'secondary-focus': '#6E3DDE',
+          'secondary-focus': '#56347d',
           'secondary-content': '#ffffff',
           'accent': '#37cdbe',
           'accent-focus': '#2aa79b',

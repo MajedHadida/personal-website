@@ -55,7 +55,7 @@ const Projects = () => {
               <div onClick={() => toggle(index)} style={{cursor:'pointer'}} className="flex justify-between">
               <h3 className="mb-3 font-bold text-gray-800 text-xl flex flex-col">
                 <div>{project.title}</div>
-                <div className="text-base text-slate-500">{project.date}</div>
+                <div className="text-base text-[#2D462D]">{project.date}</div>
               </h3>
                 {openProjectIndex === index && (
                   <FaChevronUp/>
