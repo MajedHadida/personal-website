@@ -67,6 +67,11 @@ const Home = () =>{
                 </div>
             </div>
 
+            <div className="mt-16 mb-5">
+                <Tools/>
+            </div>
+            
+
             <div id="projects">
                 <Projects/>
             </div>
@@ -76,7 +81,6 @@ const Home = () =>{
             </div> */}
 
             <div id="contact" className="mt-16 mb-5">
-                <Tools/>
                 <Contact/>
             </div>
 

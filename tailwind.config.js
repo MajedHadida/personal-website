@@ -32,7 +32,7 @@ module.exports = {
           'primary': '#D6EFD8',
           'primary-focus': '#6E3DDE',
           'primary-content': '#ffffff',
-          'secondary': '#570df8',
+          'secondary': '#633F8E',
           'secondary-focus': '#6E3DDE',
           'secondary-content': '#ffffff',
           'accent': '#37cdbe',

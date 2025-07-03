@@ -69,7 +69,7 @@ const Projects = () => {
                   <hr className="mb-2 h-px bg-black border-0"></hr>
                   {/* Iterate through "languages" array in each project to separate them to each "button" */}
                   {project.languages.map((language, index) =>(
-                    <div className="btn btn-accent mr-1 mt-1" style={{cursor:'default'}}>{language}</div>
+                    <div className="btn btn-[base-100] mr-1 mt-1 text-white" style={{cursor:'default'}}>{language}</div>
                   ))
                   }
                   <hr className="my-2 h-px bg-black border-0"></hr>
@@ -104,7 +104,7 @@ const Projects = () => {
                   <hr className="mb-2 h-px bg-black border-0"></hr>
                   {/* Iterate through "languages" array in each project to separate them to each "button" */}
                   {project.languages.map((language, index) =>(
-                    <div className="btn btn-accent mr-1 mt-1" style={{cursor:'default'}}>{language}</div>
+                    <div className="btn btn-[base-100] mr-1 mt-1 text-white" style={{cursor:'default'}}>{language}</div>
                   ))
                   }
                   <hr className="my-2 h-px bg-black border-0"></hr>
