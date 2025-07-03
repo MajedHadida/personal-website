@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.e2aa40b0.css",
-    "main.js": "/personal-website/static/js/main.274ba815.js",
+    "main.css": "/personal-website/static/css/main.b19532fc.css",
+    "main.js": "/personal-website/static/js/main.362e53f2.js",
     "static/js/453.68f06bdf.chunk.js": "/personal-website/static/js/453.68f06bdf.chunk.js",
     "static/media/TyrandeNew.gif": "/personal-website/static/media/TyrandeNew.bbe537d08086e17dbda0.gif",
     "static/media/Pikachu.gif": "/personal-website/static/media/Pikachu.7a173cfdd9b4aa3dfcea.gif",
@@ -11,12 +11,12 @@
     "static/media/Desert.png": "/personal-website/static/media/Desert.bae1c6ae9b7de8ba0f10.png",
     "static/media/MaterialsBanner.png": "/personal-website/static/media/MaterialsBanner.b3b1e3d4dfa0e9e64add.png",
     "index.html": "/personal-website/index.html",
-    "main.e2aa40b0.css.map": "/personal-website/static/css/main.e2aa40b0.css.map",
-    "main.274ba815.js.map": "/personal-website/static/js/main.274ba815.js.map",
+    "main.b19532fc.css.map": "/personal-website/static/css/main.b19532fc.css.map",
+    "main.362e53f2.js.map": "/personal-website/static/js/main.362e53f2.js.map",
     "453.68f06bdf.chunk.js.map": "/personal-website/static/js/453.68f06bdf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2aa40b0.css",
-    "static/js/main.274ba815.js"
+    "static/css/main.b19532fc.css",
+    "static/js/main.362e53f2.js"
   ]
 }
